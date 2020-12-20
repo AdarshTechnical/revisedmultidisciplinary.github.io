@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<style>
+		body{
+			font-family: 'Montserrat', sans-serif;
+		}
+	.button{
+	background-color: skyblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+	}	
+	</style>
+</head>
+
+<body>
+
+<form name="myform">
+	<h3>Q1.When was east India company incorporated by royale character in India?</h3>
+	<input type="radio" name="q1" value="A">December 1 1600<br>
+	<input type="radio" name="q1" value="B">Janaury 26 1702<br>
+	<input type="radio" name="q1" value="C">February 17 1659<br>
+	<input type="radio" name="q1" value="D">December 31 1600<br>
+	<h3>Q2.In which period India was ruled by Britisher?</h3>
+	<input type="radio" name="q2" value="A">1785-1857<br>
+	<input type="radio" name="q2" value="B">1681-1954<br>
+	<input type="radio" name="q2" value="C">1765-1857<br>
+	<input type="radio" name="q2" value="D">1765-1947<br>
+	<h3>Q3.18 वीं शताब्दी में बंगाल में एक अत्यंत प्रभावशाली व्यक्तित्व का उदय हुआ वह कौन था</h3>
+	<input type="radio" name="q3" value="A">मंगल पांडे<br>
+	<input type="radio" name="q3" value="B">राजा राम मोहन रॉय<br>
+	<input type="radio" name="q3" value="C">रानी अवंती बाई<br>
+	<input type="radio" name="q3" value="D">नाना साहेब<br>
+	<h3>Q4.When was Anglo Maratha war Started?</h3>
+	<input type="radio" name="q4" value="A">1770-1772<br>
+	<input type="radio" name="q4" value="B">1775–1782<br>
+	<input type="radio" name="q4" value="C">1761-1772<br>
+	<input type="radio" name="q4" value="D">1759-1762<br>
+	<h3>Q5.At which year and in which place the blue rebellion has been started?</h3>
+	<input type="radio" name="q5" value="A">In 1812,Calcutta<br>
+	<input type="radio" name="q5" value="B">In 1798,Maharashtra<br>
+	<input type="radio" name="q5" value="C">In 1859,Nadia Bengal<br>
+	<input type="radio" name="q5" value="D">In 1912,Delhi<br>
+	<h3>Q6.राजा राम मोहन रॉय की वजह से कोनसी सामाजिक संस्कृति पर प्रतिबंध लगा दिया गया था?</h3>
+	<input type="radio" name="q6" value="A">बालिका विकास<br>
+	<input type="radio" name="q6" value="B">दहेज<br>
+	<input type="radio" name="q6" value="C">सति प्रथा<br>
+	<input type="radio" name="q6" value="D">जातिवाद<br>
+	<h3>Q7.Where was Raja Ram Mohan Roy born</h3>
+	<input type="radio" name="q7" value="A">Jalandhar<br>
+	<input type="radio" name="q7" value="B">Koti<br>
+	<input type="radio" name="q7" value="C">RadhaNagar,Khanakul<br>
+	<input type="radio" name="q7" value="D">Jamshedpur<br>
+	<h3>Q8.In which year Anglo-Mysore was started?</h3>
+	<input type="radio" name="q8" value="A">1767-1798<br>
+	<input type="radio" name="q8" value="B">1775–1782<br>
+	<input type="radio" name="q8" value="C">1761-1772<br>
+	<input type="radio" name="q8" value="D">1759-1762<br>
+	<h3>Q9.Which Soldier was hanged to death for attacking Britisher in Barackpore?</h3>
+	<input type="radio" name="q9" value="A">ChatraPati Shivaji Maharaja<br>
+	<input type="radio" name="q9" value="B">Rani Avanti Bai<br>
+	<input type="radio" name="q9" value="C">Begum Hazrat Mahal<br>
+	<input type="radio" name="q9" value="D">Mangal Pandey<br>
+	<h3>Q10.Which information does history records contain of a person?</h3>
+	<input type="radio" name="q10" value="A">Orginal Document<br>
+	<input type="radio" name="q10" value="B">Land Document<br>
+	<input type="radio" name="q10" value="C">Birth Certificate<br>
+	<input type="radio" name="q10" value="D">Official record<br>
+<div class="heading1" style="text-align: center;">
+<input type="button" class="button" value="Submit" onclick="check()">	
+</div>
+
+</form>
+<script type="text/javascript">
+	function check(){
+		var q1=document.myform.q1.value;
+		var q2=document.myform.q2.value;
+		var q3=document.myform.q3.value;
+		var q4=document.myform.q4.value;
+		var q5=document.myform.q5.value;
+		var q6=document.myform.q6.value;
+		var q7=document.myform.q7.value;
+		var q8=document.myform.q8.value;
+		var q9=document.myform.q9.value;
+		var q10=document.myform.q10.value;
+		var count=0;
+		if(q1=="D"){
+			count++;
+		}
+		if(q2=="D"){
+			count++;
+		}
+		if(q3=="B"){
+			count++;
+		}
+		if(q4=="B"){
+			count++;
+		}
+		if(q5=="C"){
+			count++;
+		}
+		if(q6=="C"){
+			count++;
+		}
+		if(q7=="C"){
+			count++;
+		}
+		if(q8=="A"){
+			count++;
+		}
+		if(q9=="D"){
+			count++;
+		}
+		if(q10=="A"){
+			count++;
+		}
+		alert("Your total marks is "+count+ " ");
+	}	
+
+</script>
+</body>
+</html>
